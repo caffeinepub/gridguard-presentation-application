@@ -22,7 +22,7 @@ export function Slide8Future() {
   return (
     <div className="flex-1 flex flex-col p-12 md:p-16 bg-gradient-to-br from-black via-slate-950 to-black">
       {/* Header */}
-      <div className="mb-10">
+      <div className="mb-10 px-6 py-4 bg-black/50 rounded-sm inline-block">
         <h2 className="text-4xl md:text-5xl font-bold text-silver mb-3 tracking-tight">
           Feasibility & Scalability
         </h2>
@@ -31,9 +31,9 @@ export function Slide8Future() {
 
       {/* Feasibility Content */}
       <div className="mb-10 grid md:grid-cols-2 gap-6">
-        <div className="bg-black/40 p-6 rounded-sm border border-gold/30">
+        <div className="bg-black/60 p-6 rounded-sm border border-gold/30">
           <h3 className="text-xl font-semibold text-silver mb-4 tracking-wide">Implementation Feasibility</h3>
-          <ul className="space-y-3 text-silver/70 text-sm">
+          <ul className="space-y-3 text-silver text-sm">
             <li className="flex items-start gap-3">
               <span className="text-gold font-bold">•</span>
               <span>Leverages existing MDMS infrastructure</span>
@@ -53,9 +53,9 @@ export function Slide8Future() {
           </ul>
         </div>
 
-        <div className="bg-black/40 p-6 rounded-sm border border-silver/20">
+        <div className="bg-black/60 p-6 rounded-sm border border-silver/20">
           <h3 className="text-xl font-semibold text-silver mb-4 tracking-wide">Scalability Factors</h3>
-          <ul className="space-y-3 text-silver/70 text-sm">
+          <ul className="space-y-3 text-silver text-sm">
             <li className="flex items-start gap-3">
               <span className="text-gold font-bold">•</span>
               <span>Cloud-native architecture for horizontal scaling</span>
@@ -78,12 +78,14 @@ export function Slide8Future() {
 
       {/* Roadmap */}
       <div className="mb-10">
-        <h3 className="text-xl font-semibold text-silver mb-6 tracking-wide">Future Enhancements</h3>
+        <div className="mb-6 px-4 py-2 bg-black/50 rounded-sm inline-block">
+          <h3 className="text-xl font-semibold text-silver tracking-wide">Future Enhancements</h3>
+        </div>
         <div className="grid md:grid-cols-3 gap-6">
           {roadmapItems.map((item, index) => (
             <div
               key={index}
-              className="bg-black/40 p-6 rounded-sm border border-silver/20 hover:border-gold/40 transition-all"
+              className="bg-black/60 p-6 rounded-sm border border-silver/20 hover:border-gold/40 transition-all"
             >
               <div className="flex flex-col items-center text-center">
                 <div className="p-3 bg-gold/10 rounded-sm mb-4">
@@ -92,7 +94,7 @@ export function Slide8Future() {
                 <h4 className="text-base font-semibold text-silver mb-3 tracking-wide">
                   {item.title}
                 </h4>
-                <p className="text-silver/70 text-xs leading-relaxed">
+                <p className="text-silver text-xs leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -102,7 +104,7 @@ export function Slide8Future() {
       </div>
 
       {/* Footer */}
-      <footer className="mt-auto text-center text-xs text-silver/60">
+      <footer className="mt-auto text-center text-xs text-silver/80">
         <p className="flex items-center justify-center gap-2">
           © 2025. Built with <Heart className="h-3 w-3 text-gold fill-gold" /> using{' '}
           <a

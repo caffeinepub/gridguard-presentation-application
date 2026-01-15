@@ -12,7 +12,7 @@ export function Slide6Architecture() {
   return (
     <div className="flex-1 flex flex-col p-12 md:p-16 bg-gradient-to-br from-black via-slate-950 to-black">
       {/* Header */}
-      <div className="mb-10">
+      <div className="mb-10 px-6 py-4 bg-black/50 rounded-sm inline-block">
         <h2 className="text-4xl md:text-5xl font-bold text-silver mb-3 tracking-tight">
           Processing Pipeline / System Flow
         </h2>
@@ -21,11 +21,13 @@ export function Slide6Architecture() {
 
       {/* Pipeline Visualization */}
       <div className="mb-10">
-        <h3 className="text-xl font-semibold text-silver mb-6 tracking-wide">Processing Pipeline</h3>
+        <div className="mb-6 px-4 py-2 bg-black/50 rounded-sm inline-block">
+          <h3 className="text-xl font-semibold text-silver tracking-wide">Processing Pipeline</h3>
+        </div>
         <div className="flex flex-wrap items-center justify-center gap-3">
           {pipelineSteps.map((step, index) => (
             <div key={index} className="flex items-center gap-3">
-              <div className="px-5 py-3 bg-black/60 rounded-sm border border-gold/40 min-w-[160px] text-center">
+              <div className="px-5 py-3 bg-black/70 rounded-sm border border-gold/40 min-w-[160px] text-center">
                 <p className="font-medium text-silver text-sm tracking-wide">{step}</p>
               </div>
               {index < pipelineSteps.length - 1 && (
@@ -38,11 +40,13 @@ export function Slide6Architecture() {
 
       {/* Demo Flow */}
       <div className="flex-1">
-        <h3 className="text-xl font-semibold text-silver mb-6 tracking-wide">System Workflow</h3>
+        <div className="mb-6 px-4 py-2 bg-black/50 rounded-sm inline-block">
+          <h3 className="text-xl font-semibold text-silver tracking-wide">System Workflow</h3>
+        </div>
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-black/40 p-6 rounded-sm border border-gold/30">
+          <div className="bg-black/60 p-6 rounded-sm border border-gold/30">
             <h4 className="text-lg font-semibold text-silver mb-4 tracking-wide">Processing Steps</h4>
-            <ul className="space-y-3 text-silver/70 text-sm">
+            <ul className="space-y-3 text-silver text-sm">
               <li className="flex items-start gap-3">
                 <span className="text-gold font-bold">1.</span>
                 <span>Model computes anomalies from consumption data</span>
@@ -66,9 +70,9 @@ export function Slide6Architecture() {
             </ul>
           </div>
 
-          <div className="bg-black/40 p-6 rounded-sm border border-silver/20">
+          <div className="bg-black/60 p-6 rounded-sm border border-silver/20">
             <h4 className="text-lg font-semibold text-silver mb-4 tracking-wide">Key Components</h4>
-            <ul className="space-y-3 text-silver/70 text-sm">
+            <ul className="space-y-3 text-silver text-sm">
               <li className="flex items-start gap-3">
                 <span className="text-gold">▪</span>
                 <span>MDMS data integration layer</span>
@@ -95,8 +99,8 @@ export function Slide6Architecture() {
       </div>
 
       {/* Bottom Note */}
-      <div className="mt-6 p-5 bg-gold/5 border border-gold/30 rounded-sm">
-        <p className="text-base font-medium text-silver/90 text-center tracking-wide">
+      <div className="mt-6 p-5 bg-gold/10 border border-gold/30 rounded-sm">
+        <p className="text-base font-medium text-silver text-center tracking-wide">
           End-to-end automated pipeline from data ingestion to actionable insights
         </p>
       </div>

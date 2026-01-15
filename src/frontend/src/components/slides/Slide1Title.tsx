@@ -11,33 +11,39 @@ export function Slide1Title() {
 
       <div className="relative z-10 max-w-5xl">
         {/* Project Name */}
-        <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
-          <span className="bg-gradient-to-r from-silver via-gold to-silver bg-clip-text text-transparent">
-            GridGuard
-          </span>
-        </h1>
+        <div className="mb-6 px-8 py-4 bg-black/60 rounded-sm">
+          <h1 className="text-6xl md:text-8xl font-bold tracking-tight">
+            <span className="bg-gradient-to-r from-silver via-gold to-silver bg-clip-text text-transparent">
+              GridGuard
+            </span>
+          </h1>
+        </div>
 
         {/* Tagline */}
-        <p className="text-xl md:text-2xl font-light text-silver mb-4 tracking-wide">
-          Intelligent Detection of Power Theft & Meter Anomalies using Explainable AI
-        </p>
+        <div className="mb-4 px-6 py-3 bg-black/50 rounded-sm">
+          <p className="text-xl md:text-2xl font-light text-silver tracking-wide">
+            Intelligent Detection of Power Theft & Meter Anomalies using Explainable AI
+          </p>
+        </div>
 
         {/* Subtitle */}
-        <p className="text-lg md:text-xl text-silver/70 mb-12 tracking-wide">
-          Reducing AT&C Losses through Unsupervised Machine Learning
-        </p>
+        <div className="mb-12 px-6 py-3 bg-black/40 rounded-sm">
+          <p className="text-lg md:text-xl text-silver tracking-wide">
+            Reducing AT&C Losses through Unsupervised Machine Learning
+          </p>
+        </div>
 
         {/* Divider */}
         <div className="w-32 h-px bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mb-12" />
 
         {/* Team Info */}
-        <div className="space-y-3 text-base text-silver/80 tracking-wide">
-          <p className="font-semibold text-gold">Team: Daevis</p>
-          <p>Member: Daevis.W</p>
+        <div className="space-y-3 text-base px-6 py-4 bg-black/50 rounded-sm inline-block">
+          <p className="font-semibold text-gold tracking-wide">Team: Daevis</p>
+          <p className="text-silver tracking-wide">Member: Daevis.W</p>
         </div>
 
         {/* Hackathon Badge */}
-        <div className="mt-12 inline-block px-8 py-4 bg-black/50 border border-gold/50 rounded-sm">
+        <div className="mt-12 inline-block px-8 py-4 bg-black/60 border border-gold/50 rounded-sm">
           <p className="text-lg font-semibold text-gold tracking-wider">TechSprint Manipur 1.0</p>
         </div>
       </div>

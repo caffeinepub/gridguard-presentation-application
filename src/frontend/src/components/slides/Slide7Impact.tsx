@@ -27,7 +27,7 @@ export function Slide7Impact() {
   return (
     <div className="flex-1 flex flex-col p-12 md:p-16 bg-gradient-to-br from-black via-slate-950 to-black">
       {/* Header */}
-      <div className="mb-10">
+      <div className="mb-10 px-6 py-4 bg-black/50 rounded-sm inline-block">
         <h2 className="text-4xl md:text-5xl font-bold text-silver mb-3 tracking-tight">
           Impact & Value
         </h2>
@@ -39,7 +39,7 @@ export function Slide7Impact() {
         {impacts.map((impact, index) => (
           <div
             key={index}
-            className="bg-black/40 p-8 rounded-sm border border-silver/20 hover:border-gold/40 transition-all"
+            className="bg-black/60 p-8 rounded-sm border border-silver/20 hover:border-gold/40 transition-all"
           >
             <div className="flex items-start gap-4">
               <div className="p-3 bg-gold/10 rounded-sm">
@@ -49,7 +49,7 @@ export function Slide7Impact() {
                 <h3 className="text-xl font-semibold text-silver mb-3 tracking-wide">
                   {impact.title}
                 </h3>
-                <p className="text-silver/70 text-sm leading-relaxed">
+                <p className="text-silver text-sm leading-relaxed">
                   {impact.description}
                 </p>
               </div>
@@ -59,7 +59,7 @@ export function Slide7Impact() {
       </div>
 
       {/* Bottom Highlight */}
-      <div className="mt-8 p-6 bg-gradient-to-r from-gold/10 to-silver/10 rounded-sm border border-gold/30">
+      <div className="mt-8 p-6 bg-gradient-to-r from-gold/15 to-silver/15 rounded-sm border border-gold/30">
         <p className="text-lg font-medium text-silver text-center tracking-wide">
           Transforming power theft detection from reactive to proactive, enabling DISCOMs to protect revenue and ensure grid reliability
         </p>
